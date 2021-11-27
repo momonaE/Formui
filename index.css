@@ -1,0 +1,106 @@
+body {
+    margin: 2em 20em 0em;
+    background-color: whitesmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav" "main main main main";
+    grid-template-rows: 1fr auto;
+    border: 1px solid rgb(240, 231, 231);
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(144, 215, 224);
+    height: 2.5em;
+}
+
+.main {
+    grid-area: main;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "main-header main-header main-header main-header""main-form main-form main-form main-form";
+    display: grid;
+}
+
+.main-form {
+    grid-area: main-form;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "col1 col1 col2 col2""sub sub sub sub";
+    display: grid;
+}
+
+.sub {
+    grid-area: sub;
+    background-color: lightgray;
+    vertical-align: baseline;
+    padding: 9px;
+}
+
+.end {
+    margin: 0em 0px 0px 20em;
+}
+
+.end>input {
+    background-color: rgb(144, 215, 224);
+    width: 100px;
+}
+
+.main-header {
+    grid-area: main-header;
+    margin: 3px 5px;
+    font-size: 1em;
+    font-family: monospace;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.col2 {
+    grid-area: col2;
+}
+
+.col1 {
+    grid-area: col1;
+}
+
+.submisson {
+    grid-area: submisson;
+    background-color: brown;
+}
+
+.select,
+.heading {
+    display: inline;
+}
+
+.heading {
+    display: inline;
+    margin-right: 3em;
+}
+
+.select {
+    border: 0px;
+    outline: 0px;
+}
+
+.form-label {
+    margin: 1em;
+}
+
+label {
+    padding-right: 5em;
+    ;
+}
+
+.address {
+    vertical-align: top;
+}
+
+.required {
+    color: red;
+}
+
+.select-form {
+    width: 45%;
+}
